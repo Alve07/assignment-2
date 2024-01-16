@@ -5,6 +5,26 @@
     font-family: 'Mulish', sans-serif;
 }
 
+.btn-primary {
+    border: none;
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #FF5400;
+}
+
+.btn-primary-white {
+    border: none;
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #FF5400;
+    color: #FFF;
+}
+
+
 .hamburger img {
     display: none;
     width: 24px;
@@ -13,19 +33,53 @@
     cursor: pointer;
 }
 
+.heading-primary {
+    color: #131318;
+    /* text-align: center; */
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.heading-primary-center {
+    color: #131318;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.text-primary {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.text-primary-center {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
 body {
     margin: 0;
 }
 
+/* -----Shared style ends---- */
+
 /* Header styles  */
 header {
-    padding: 63px 135px;
+    padding: 50px 135px;
 }
 
 nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 
 }
 
@@ -42,6 +96,7 @@ nav {
 .nav-elements ul {
     display: flex;
     gap: 44px;
+    /* flex-wrap: wrap; */
 }
 
 .nav-elements ul li {
@@ -68,8 +123,140 @@ nav {
     color: #FF5400;
 }
 
-/* Responsive design for navbar */
+/* banner style */
+
+.banner {
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('/Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90%;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.banner-elements {
+
+    margin: 0px auto;
+    text-align: center;
+    color: #FFF;
+}
+
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    position: relative;
+    max-width: 100%;
+    font-size: 4rem;
+    font-weight: 800;
+    text-wrap: nowrap;
+}
+
+.banner-text {
+    font-size: 1rem;
+    max-width: 700px;
+    text-align: center;
+    line-height: 26px;
+    font-weight: 400;
+
+
+}
+
+.selector {
+
+    display: flex;
+    /* max-width: 200px;
+    justify-content: center;
+    align-items: center; */
+    width: auto;
+    /* padding: 25px; */
+
+
+
+
+
+
+}
+
+.input {
+
+
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    /* max-width: 200px; */
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.30);
+    gap: 24px;
+    padding: 25px;
+
+
+
+
+
+}
+
+.box {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FFF;
+    /* margin: 0 25px; */
+    border: none;
+    text-align: center;
+}
+
+/* main styles */
+main {
+    padding: 50px 135px;
+    margin: 0 auto;
+}
+
+.img-container img {
+    border-radius: 16px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    width: 100%;
+    height: 90%;
+
+}
+
+.popular-tour-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.popular-tour-content {
+    max-width: 700px;
+    padding-bottom: 24px;
+}
+
+.popular-tour-content h2 {
+    margin: 0;
+}
+
+
+
+
+
+/* Responsive design for mobile devices  */
 @media screen and (max-width: 600px) {
+
+    /* for navbar */
     header {
         padding: 20px;
     }
@@ -91,4 +278,52 @@ nav {
     .hamburger img {
         display: block;
     }
+
+    /* for banner */
+    .banner-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .banner-text {
+        font-size: 0.9rem;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .input {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 300px;
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    .box {
+        width: 255px;
+        margin: 0px;
+    }
+
+    .btn-primary {
+        width: 255px;
+        margin: 0px;
+    }
+
+    .popular-tour-container {
+        flex-direction: column;
+    }
+
+    .heading-primary {
+        font-size: 1rem;
+    }
+
+    .text-primary {
+        font-size: .875rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+
 }
