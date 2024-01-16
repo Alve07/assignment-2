@@ -5,6 +5,14 @@
     font-family: 'Mulish', sans-serif;
 }
 
+.hamburger img {
+    display: none;
+    width: 24px;
+    height: 24px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 body {
     margin: 0;
 }
@@ -58,4 +66,29 @@ nav {
 
 #home {
     color: #FF5400;
+}
+
+/* Responsive design for navbar */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    .name {
+        font-size: 1.3rem;
+        margin-left: 10px;
+    }
+
+    .logo-name img {
+        width: 1.7rem;
+        height: 2rem;
+    }
+
+    .nav-elements {
+        display: none;
+    }
+
+    .hamburger img {
+        display: block;
+    }
 }
