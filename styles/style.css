@@ -249,11 +249,211 @@ main {
     margin: 0;
 }
 
+/* Choose you destination section styles */
+
+.choose-destination-content {
+    max-width: 700px;
+    margin: 100px auto;
+}
+
+.row-double {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+}
+
+.row-triple {
+    display: grid;
+    grid-template-columns: 1fr 1.267fr .7fr;
+    column-gap: 24px;
+}
+
+.row-semi-double {
+    display: grid;
+    grid-template-columns: 1fr 1.422fr;
+    margin-top: 0px;
+    column-gap: 24px;
+}
+
+.img-container img {
+    width: 100%;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%)
+}
+
+
+
+
+/* Newsletter section style */
+.newsletter {
+    margin-top: 100px;
+}
+
+.newsletter-container {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 0 40px;
+}
+
+.newsletter-img {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+
+.letter-img img {
+    width: 100%;
+
+}
+
+hr {
+    background: rgba(19, 19, 24, 0.10);
+    width: 90%;
+    height: 1px;
+    margin: 48px auto;
+
+}
+
+.inp input {
+    display: block;
+    margin: 5px auto;
+    width: 100%;
+    height: 52px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+
+}
+
+.subscribe {
+    margin: 5px auto;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.letter-img {
+    position: relative;
+}
+
+.travel-com {
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    padding-top: 1px;
+    position: absolute;
+    left: 340px;
+    bottom: 55px;
+}
+
+/* why us section */
+
+.why-us-content {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+.cart {
+    border-radius: 16px;
+
+    width: 40%;
+    height: 284px;
+}
+
+.cart-img i {
+    font-size: 4rem;
+    margin: 30px;
+
+}
+
+.cart-1 {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    ;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.cart-2 {
+    background: rgba(41, 206, 246, 0.05);
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    margin-top: 20px;
+}
+
+.cart-3 {
+    border: 1px solid rgba(233, 68, 68, 0.20);
+
+    background: rgba(233, 68, 68, 0.05);
+    margin-top: 20px;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.price-gaurantee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+/* footer style */
+footer {
+    background: rgba(19, 19, 24, 0.05);
+}
+
+
+.icons i {
+    font-size: 1.5rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icons-container i {
+    padding-right: 40px;
+}
+
+.name-container {
+    max-width: 770px;
+    margin: 5px auto;
+}
+
+.footer-content .logo-name {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal hr {
+    background: rgba(19, 19, 24, 0.10);
+}
+
+
 
 
 
 
 /* Responsive design for mobile devices  */
+
 @media screen and (max-width: 600px) {
 
     /* for navbar */
@@ -310,7 +510,9 @@ main {
         margin: 0px;
     }
 
-    .popular-tour-container {
+    .popular-tour-container,
+    .newsletter-img,
+    .cart-container {
         flex-direction: column;
     }
 
@@ -325,5 +527,93 @@ main {
     main {
         padding: 20px;
     }
+
+    .row-double {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .row-triple {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .row-semi-double {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .row-double img {
+        width: 335px;
+        height: 176px;
+        margin: 20px auto;
+
+    }
+
+    .row-triple img {
+        width: 335px;
+        height: 176px;
+        margin: 20px auto;
+    }
+
+    .row-semi-double img {
+        width: 335px;
+        height: 176px;
+        margin: 20px auto;
+    }
+
+
+
+    .newsletter-img img {
+        margin-top: 20px;
+    }
+
+
+
+    .travel-com {
+        width: auto;
+        height: auto;
+        transform: rotate(0deg);
+        flex-shrink: 0;
+        border-radius: 16px;
+        background: #FF5400;
+        color: #FFF;
+        text-align: center;
+        padding-top: 1px;
+        /* position: absolute; */
+        position: static
+    }
+
+    /* .letter-img {
+        position: ;
+    } */
+    .subscribe {
+        margin: 10px auto;
+        width: 100%;
+        color: #FFF;
+        font-size: 1.25rem;
+        font-weight: 800;
+    }
+
+    .cart {
+        width: 100%;
+        height: auto;
+    }
+
+    .cart-img i {
+        font-size: 3rem;
+
+
+    }
+
+    .cart-text {
+        margin-left: 30px;
+    }
+
+    .heading-primary-center {
+        font-size: 1.25rem;
+    }
+
+    .text-primary-center {
+        font-size: .8rem;
+    }
+
 
 }
